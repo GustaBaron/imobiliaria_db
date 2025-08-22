@@ -13,7 +13,9 @@ public class ConnectionFactory {
     private ConnectionFactory(){}
 
     public static ConnectionFactory getInstance(){
-        if(instance == null) instance = new ConnectionFactory();
+        if(instance == null) {
+            instance = new ConnectionFactory();
+        }
         return instance;
     }
 

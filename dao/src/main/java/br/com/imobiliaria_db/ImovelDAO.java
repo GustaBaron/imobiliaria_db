@@ -10,7 +10,7 @@ import java.util.Optional;
 
 public class ImovelDAO extends BaseDAO {
     public void deletarPeloId(long id) {
-        String sql = "delete from pessoa where id_Imovel = ? ";
+        String sql = "delete from imovel where id_Imovel = ? ";
         // try-with-resources
         // fecha automaticamente o recurso aberto.
         try (Connection con = con();
@@ -43,9 +43,41 @@ public class ImovelDAO extends BaseDAO {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
     }
+    // TODO
+    public List<Imovel> obterTodos(){
+
+        String sql = "select * from imovel";
+        List<Imovel> imov  = new ArrayList<>();
+
+        try{
+            Connection con = con();
+            PreparedStatement pre = con.prepareStatement(sql);
+
+            ResultSet rs = pre.executeQuery();
+
+            while(rs.next()){
+                Imovel imovel = new Imovel();
+                imovel.setId(rs.getInt("id"));
+                imovel.setEndereco(rs.getString("endereco"));
+                imovel.setTipo(rs.getString("tipo"));
+                imovel.setQuartos(rs.getString("quartos"));
+                imovel.setBanheiro(rs.getString("banheiros"));
+                imovel.setArea_m2(rs.getString("area_m2"));
+                imovel.setPreco_base(rs.getString("preco_base"));
+                imov.add(imovel);
+
+
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    //Evita ponto nulo
     public Optional<Imovel> obterPeloId(long id){
         String sql = "select id_Imovel, endereco, from pessoa where id_Imovel = ? ";
         Imovel imovel = null;

@@ -1,6 +1,6 @@
 package br.com.imobiliaria_db;
 
-import com.mysql.cj.jdbc.result.UpdatableResultSet;
+
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -47,17 +47,13 @@ public class ClienteDAO extends BaseDAO {
 
     }
 
-    // TODO
-    public void atualizar(Cliente cliente){
 
-
-    }
 
     // TODO
     public List<Cliente> obterTodos(){
 
-        String sql = "select * from pessoa";
-        List<Cliente> clientes = new ArrayList<>();
+        String sql = "select * from cliente";
+        List<Cliente> client = new ArrayList<>();
 
         try{
             Connection con = con();
@@ -68,8 +64,12 @@ public class ClienteDAO extends BaseDAO {
             while(rs.next()){
                 Cliente cliente = new Cliente();
                 cliente.setId(rs.getInt("id"));
+                cliente.setNome(rs.getString("nome"));
+                cliente.setCpf(rs.getString("cpf"));
+                cliente.setTelefone(rs.getString("telefone"));
+                cliente.setEmail(rs.getString("email"));
 
-                clientes.add(cliente);
+                client.add(cliente);
             }
 
         } catch (SQLException e) {
