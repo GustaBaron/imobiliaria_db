@@ -3,8 +3,8 @@
 ## 👥 Equipe
 | Integrante | E-mail |
 |------------|--------|
-| João Rosa  | joaovitorrosamacahdo@hotmail.com|
-| Allan    |- |
+| Gustavo Alexandre  | barongucontacts@gmailcom|
+| Kaio Natal   |- |
 
 ---
 
@@ -63,14 +63,14 @@ Editar
 
 ## 📊 Diagrama de Classes (UML)
 
-<img width="1090" height="730" alt="UML-Imob" src="https://github.com/user-attachments/assets/ef2d4c62-1499-4639-b25d-d971d13eeb7f" />
+<img width="1090" height="730" alt="UML-Imob" src="" />
 
 
 ---
 
 ## 📈 Diagrama MER
 
-<img width="387" height="369" alt="MER-Imob1" src="https://github.com/user-attachments/assets/737c6e85-7713-47f3-b954-6382c4ea3fda" />
+<img width="387" height="369" alt="MER-Imob1" src="" />
 
 ---
 
