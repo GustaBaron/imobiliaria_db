@@ -70,7 +70,7 @@ Editar
 
 ## 📈 Diagrama MER
 
-<img width="387" height="369" alt="MER-Imob1" src="https://github.com/GustaBaron/imobiliaria_db/blob/master/Diagrama%20UML.jpg" />
+<img width="387" height="369" alt="MER-Imob1" src="https://github.com/GustaBaron/imobiliaria_db/blob/master/Diagrama%20MER.jpg" />
 
 ---
 
