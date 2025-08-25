@@ -63,14 +63,14 @@ Editar
 
 ## 📊 Diagrama de Classes (UML)
 
-<img width="1090" height="730" alt="UML-Imob" src="" />
+<img width="1090" height="730" alt="UML-Imob" src="https://github.com/GustaBaron/imobiliaria_db/blob/master/Diagrama%20UML.jpg" />
 
 
 ---
 
 ## 📈 Diagrama MER
 
-<img width="387" height="369" alt="MER-Imob1" src="" />
+<img width="387" height="369" alt="MER-Imob1" src="https://github.com/GustaBaron/imobiliaria_db/blob/master/Diagrama%20UML.jpg" />
 
 ---
 
