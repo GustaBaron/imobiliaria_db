@@ -4,7 +4,7 @@
 | Integrante | E-mail |
 |------------|--------|
 | Gustavo Alexandre  | barongucontacts@gmailcom|
-| Kaio Natal   |- |
+| Kaio Natal   |- | kaionatal7@gmail.com
 
 ---
 
